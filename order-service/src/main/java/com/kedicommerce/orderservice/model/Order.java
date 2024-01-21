@@ -20,6 +20,9 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String orderNumber;
+    /**
+     * each instance of the order class can have multiple instance of the OrderLineItems
+     */
     @OneToMany(cascade = CascadeType.ALL)
     private List<OrderLineItems> orderLineItemsList;
 
