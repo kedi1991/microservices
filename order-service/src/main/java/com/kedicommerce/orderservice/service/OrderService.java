@@ -5,6 +5,7 @@ import com.kedicommerce.orderservice.dto.OrderRequest;
 import com.kedicommerce.orderservice.model.Order;
 import com.kedicommerce.orderservice.model.OrderLineItems;
 import com.kedicommerce.orderservice.repository.OrderRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class OrderService {
     /**
      * used to place the order with a DTO
